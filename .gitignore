@@ -1,0 +1,30 @@
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# ---- Remotion / 构建产物 ----
+.tmp/
+out/frames/
+out/preview.png
+remotion-build/
+.webpack/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# ---- 编辑器 / 系统 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- 注意 ----
+# out/ 下的成片（*.mp4）与总览图是要随仓库分发的成品，故意不忽略。
+# 若你替换了自己的片子且体积过大，建议改用 Git LFS 或 release 附件。

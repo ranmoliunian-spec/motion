@@ -1,0 +1,9 @@
+# Python 依赖（声音链与音乐链）
+# 安装：pip install -r requirements.txt
+
+edge-tts>=7.0.0    # 旁白合成（微软 Edge 在线语音，免费无需 key）
+numpy>=1.24        # 背景音乐逐样本合成
+
+# 备注：本仓库开发与验证环境为
+#   edge-tts 7.2.8 / numpy 2.5.3 / Python 3.13.12
+# 另需系统安装 ffmpeg（提供 ffmpeg / ffprobe 命令），用于测量时长与混音校验。

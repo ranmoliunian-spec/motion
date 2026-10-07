@@ -1,0 +1,27 @@
+* text=auto eol=lf
+
+# 源码
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.py   text eol=lf
+*.sh   text eol=lf
+*.ps1  text eol=crlf
+*.md   text eol=lf
+
+# 二进制（禁止行尾转换与 diff 文本化）
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.mp4  binary
+*.mov  binary
+*.mp3  binary
+*.wav  binary
+*.ico  binary
+
+# GitHub 语言统计：把源码之外的目录排除掉，避免被 wav/mp4 计成主语言
+public/audio/**  linguist-vendored
+out/**           linguist-vendored
+docs/storyboard/** linguist-vendored
+package-lock.json linguist-generated

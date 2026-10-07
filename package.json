@@ -1,0 +1,50 @@
+{
+  "name": "motion",
+  "version": "1.0.0",
+  "description": "贴纸科普风横屏 16:9 视频生成管线（Remotion + edge-tts + NumPy），示例作品：浙江金融职业学院 2 分钟宣传片",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranmoliunian-spec/motion.git"
+  },
+  "homepage": "https://github.com/ranmoliunian-spec/motion#readme",
+  "bugs": {
+    "url": "https://github.com/ranmoliunian-spec/motion/issues"
+  },
+  "keywords": [
+    "remotion",
+    "react",
+    "video",
+    "motion-graphics",
+    "sticker",
+    "chinese",
+    "tts",
+    "edge-tts",
+    "numpy",
+    "dubbing",
+    "ducking"
+  ],
+  "scripts": {
+    "voice": "python3 script/tts.py",
+    "bgm": "python3 script/bgm.py",
+    "timeline": "python3 script/build_timeline.py",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts ZfcPromo out/zfc-promo.mp4 --codec=h264 --audio-codec=aac --audio-bitrate=192k --crf=16 --pixel-format=yuv420p",
+    "still": "remotion still src/index.ts ZfcPromo out/preview.png --frame=120",
+    "check": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.534",
+    "@remotion/google-fonts": "^4.0.534",
+    "@remotion/renderer": "^4.0.534",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.534",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
