@@ -19,17 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
---------------------------------------------------------------------------------
-
-说明 / Note
-
-本仓库中的「代码、文案模板、提示词文档、合成音频」按上述 MIT 条款开源。
-
-但请注意：`out/` 目录下的成片视频及其中的学校名称、办学数据、视觉标识，
-属于演示用途的示例作品，相关事实信息与标识权利归浙江金融职业学院所有；
-二次使用请自行向权利人确认。示例仅用于展示技术方案，不代表学校官方发布。
-
-The demo video under `out/` is an example production for technical demonstration
-only. Factual information and identity marks of the school belong to their
-respective owner. Please clear rights before any reuse.
